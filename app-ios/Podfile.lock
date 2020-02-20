@@ -1,0 +1,16 @@
+PODS:
+  - core (1.0)
+
+DEPENDENCIES:
+  - core (from `../core`)
+
+EXTERNAL SOURCES:
+  core:
+    :path: "../core"
+
+SPEC CHECKSUMS:
+  core: afea9854669659d3e9230f37535429cbb3ef38da
+
+PODFILE CHECKSUM: 4cfec0272aaecc8a67aff319ad643b32b9f8cdd6
+
+COCOAPODS: 1.8.4
