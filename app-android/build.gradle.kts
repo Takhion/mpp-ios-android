@@ -30,6 +30,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
     implementation(fileTree("libs") { include("*.jar") })
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7")
     implementation("androidx.appcompat:appcompat:1.1.0")
