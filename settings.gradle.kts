@@ -33,3 +33,10 @@ pluginManagement {
         }
     }
 }
+
+/** add the plugins repositories to every project */
+gradle.beforeProject {
+    settings.pluginManagement.repositories.all {
+        project.repositories.add(this)
+    }
+}
