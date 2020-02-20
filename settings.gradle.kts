@@ -1,10 +1,12 @@
 rootProject.name = "mpp-ios-android"
+include(":core")
 include(":app-android")
 
 pluginManagement {
     /** default plugin versions */
     plugins {
         listOf(
+            kotlin("multiplatform"),
             kotlin("android"),
             kotlin("android.extensions")
         ).forEach { it version "1.3.70-eap-184" }
