@@ -1,6 +1,7 @@
 rootProject.name = "mpp-ios-android"
 include(":core")
 include(":app-android")
+include(":iOSApp")
 
 pluginManagement {
     /** default plugin versions */
