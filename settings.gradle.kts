@@ -12,7 +12,8 @@ pluginManagement {
         ).forEach { it version "1.3.70-eap-184" }
 
         listOf(
-            id("com.android.application")
+            id("com.android.application"),
+            id("com.android.library")
         ).forEach { it version "3.6.0-rc03" }
     }
     /** custom plugin repositories */
@@ -29,7 +30,8 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             when (requested.id.id) {
-                "com.android.application"
+                "com.android.application",
+                "com.android.library"
                 -> useModule("com.android.tools.build:gradle:${target.version ?: requested.version}")
             }
         }
