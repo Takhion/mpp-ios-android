@@ -4,8 +4,6 @@ plugins {
     kotlin("android.extensions")
 }
 
-val kotlin_version: String by project
-
 android {
     compileSdkVersion(29)
     buildToolsVersion("29.0.3")
