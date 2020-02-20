@@ -1,6 +1,10 @@
-apply(plugin: "com.android.application")
-apply(plugin: "kotlin-android")
-apply(plugin: "kotlin-android-extensions")
+plugins {
+    id("com.android.application")
+    kotlin("android")
+    kotlin("android.extensions")
+}
+
+val kotlin_version: String by project
 
 android {
     compileSdkVersion(29)
@@ -18,7 +22,7 @@ android {
 
     buildTypes {
         named("release") {
-            setMinifyEnabled(false)
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
