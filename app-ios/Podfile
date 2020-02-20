@@ -6,5 +6,5 @@ target 'iOSApp' do
   use_frameworks!
 
   # Pods for iOSApp
-
+  pod 'core', :path => '../core'
 end

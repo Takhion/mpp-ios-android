@@ -9,7 +9,8 @@ pluginManagement {
         listOf(
             kotlin("multiplatform"),
             kotlin("android"),
-            kotlin("android.extensions")
+            kotlin("android.extensions"),
+            kotlin("native.cocoapods")
         ).forEach { it version "1.3.70-eap-184" }
 
         listOf(
